@@ -1,4 +1,4 @@
-/* --- ESTILOS GERAIS E PARA DESKTOP --- */
+
 body {
     margin: 0;
     background-color: #f0f2f5;
@@ -12,7 +12,7 @@ body {
 
 .cabecalho {
     background-color: #3d357e;
-    padding: 30px 20px; 
+    padding: 30px 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
@@ -21,14 +21,14 @@ body {
 .logo {
     width: 180px;
     height: auto;
-    transition: width 0.3s ease; 
+}
 
 .listas-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 .lista-suspensa {
@@ -39,7 +39,7 @@ body {
     border: 1px solid #e0e0e0;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .lista-suspensa:hover {
@@ -60,7 +60,7 @@ body {
     align-items: center;
     background-color: #f8f8f8;
     border-bottom: 1px solid transparent;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .lista-suspensa summary:hover {
@@ -117,18 +117,18 @@ body {
     background-color: #fff;
     padding: 5px;
     box-sizing: border-box;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     transition: transform 0.2s ease;
 }
 
 .botoes a:hover .botao-imagem {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 
-/* --- RESPONSIVIDADE / MATHEUS NÃO MEXER NESSA PARTE --- */
+/* ---MATHEUS NAO MEXER NESSA PARTE--- */
 
-
+/* Telas médias (tablets em modo retrato) */
 @media (max-width: 768px) {
     .cabecalho {
         padding: 25px 15px;
@@ -160,13 +160,13 @@ body {
     }
 }
 
-/* REPONSIVDADE - MATHEUS NAO MEXER NESSA PARTE - (CELULAR / TABLET) */
+
+/*(maioria dos celulares) MATHEUS NAO MEXER NESSA PARTE*/
 @media (max-width: 480px) {
     body {
-        /* Remove o efeito de 'hover' que não funciona em toque (Nunca tirar) */
         -webkit-tap-highlight-color: transparent;
     }
-         /* Remove o efeito de 'hover' que não funciona em toque (Nunca tirar) */ 
+
     .cabecalho {
         padding: 20px 10px;
         margin-bottom: 25px;
@@ -181,9 +181,10 @@ body {
         padding: 0 10px;
     }
     
+    
     .lista-suspensa:hover {
-       
         transform: none;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Mantém a sombra padrão */
     }
 
     .lista-suspensa summary {
@@ -196,19 +197,8 @@ body {
         gap: 8px;
     }
 
-    .botoes a {
-       
-        transition: none;
-    }
-
-    .botoes a:hover {
-        transform: none;
-        background-color: transparent;
-        color: #333;
-    }
     
     .botoes a:active {
-       
         background-color: #f0f0f0;
     }
 
