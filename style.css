@@ -1,4 +1,4 @@
-/* --- ESTILOS GERAIS E PARA DESKTOP --- */
+
 body {
     margin: 0;
     background-color: #f0f2f5;
@@ -126,7 +126,7 @@ body {
 }
 
 
-/* --- PARTE RESPONSIVA (NÃO MEXER) --- */
+/* --- PARTE RESPONSIVA ( MATHEUS NÃO MEXER) --- */
 
 @media (max-width: 768px) {
     .cabecalho {
