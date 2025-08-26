@@ -3,11 +3,17 @@ body {
     margin: 0;
     background-color: #f0f2f5;
     margin-bottom: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'manrope';
+    font-weight: 150;
     color: #333;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'manrope';
+    src: url(fonts/Manrope-VariableFont_wght.ttf) format('truetype');
 }
 
 .cabecalho {
