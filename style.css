@@ -1,4 +1,4 @@
-
+/* --- ESTILOS GERAIS E PARA DESKTOP --- */
 body {
     margin: 0;
     background-color: #f0f2f5;
@@ -126,9 +126,8 @@ body {
 }
 
 
-/* ---MATHEUS NAO MEXER NESSA PARTE--- */
+/* --- PARTE RESPONSIVA (NÃO MEXER) --- */
 
-/* Telas médias (tablets em modo retrato) */
 @media (max-width: 768px) {
     .cabecalho {
         padding: 25px 15px;
@@ -160,8 +159,6 @@ body {
     }
 }
 
-
-/*(maioria dos celulares) MATHEUS NAO MEXER NESSA PARTE*/
 @media (max-width: 480px) {
     body {
         -webkit-tap-highlight-color: transparent;
@@ -181,10 +178,9 @@ body {
         padding: 0 10px;
     }
     
-    
     .lista-suspensa:hover {
         transform: none;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Mantém a sombra padrão */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     }
 
     .lista-suspensa summary {
@@ -196,7 +192,6 @@ body {
         padding: 10px 15px;
         gap: 8px;
     }
-
     
     .botoes a:active {
         background-color: #f0f0f0;
