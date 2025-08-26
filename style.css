@@ -20,6 +20,14 @@ header h1{
     color: #ffffff;
 }
 
+.fonte {
+    color: white;
+    font-family:'manrope';
+    padding-bottom: 5vh;
+    font-weight: 150;
+    font-size: 25pt;
+}
+
 .cabecalho {
     background-color: #3d357e;
     padding: 30px 20px;
