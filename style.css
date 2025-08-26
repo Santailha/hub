@@ -1,23 +1,23 @@
 body {
     margin: 0;
-    background-color: #f0f2f5; /* Um fundo mais suave para contraste */
+    background-color: #f0f2f5;
     margin-bottom: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
 .logo {
     text-align: center;
-    width: 180px; /* Levemente maior */
+    width: 180px;
     height: auto;
 }
 
 .cabecalho {
-    background-color: #3d357e; /* Azul Santa Ilha */
+    background-color: #3d357e;
     padding: 30px 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
 }
 
@@ -25,40 +25,39 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px; /* Espaçamento maior entre as listas */
+    gap: 25px;
     padding: 0 20px;
 }
 
 .lista-suspensa {
     width: 100%;
-    max-width: 750px; /* Ligeiramente mais largo */
+    max-width: 750px;
     background-color: #ffffff;
-    border-radius: 12px; /* Cantos mais arredondados */
-    border: 1px solid #e0e0e0; /* Borda mais suave */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-    overflow: hidden; /* Garante que o conteúdo não vaze */
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
 
 .lista-suspensa:hover {
-    transform: translateY(-5px); /* Efeito sutil de elevação */
+    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilo do título da lista (o que você clica) */
 .lista-suspensa summary {
-    padding: 18px 25px; /* Mais padding */
-    font-size: 1.3em; /* Tamanho maior */
-    font-weight: 700; /* Mais negrito */
+    padding: 18px 25px;
+    font-size: 1.3em;
+    font-weight: 700;
     cursor: pointer;
     outline: none;
-    color: #3d357e; /* Azul Santa Ilha para o texto */
+    color: #3d357e;
     list-style: none;
-    display: flex; /* Para alinhar o ícone */
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f8f8; /* Fundo levemente cinza para o título */
-    border-bottom: 1px solid transparent; /* Borda inicial transparente */
+    background-color: #f8f8f8;
+    border-bottom: 1px solid transparent;
     transition: all 0.3s ease-in-out;
 }
 
@@ -66,88 +65,70 @@ body {
     background-color: #e6e6e6;
 }
 
-/* Adicionando um indicador visual para "aberto" */
 .lista-suspensa summary::after {
     content: '+';
     font-size: 1.5em;
-    color: #edae0f; /* Amarelo Santa Ilha */
+    color: #edae0f;
     transition: transform 0.3s ease-in-out;
 }
 
 .lista-suspensa[open] summary::after {
     content: '-';
-    transform: rotate(0deg); /* Volta à posição normal */
 }
 
 .lista-suspensa[open] summary {
     background-color: #e6e6e6;
-    border-bottom: 1px solid #edae0f; /* Borda amarela quando aberto */
+    border-bottom: 1px solid #edae0f;
 }
 
+/* --- MUDANÇAS PRINCIPAIS AQUI --- */
 
 .botoes {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px; /* Espaçamento maior entre os botões */
-    padding: 25px;
-    background-color: #fdfdfd; /* Fundo claro para as imagens */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    gap: 10px; /* Espaço entre os itens da lista */
+    padding: 20px 25px;
+    background-color: #fdfdfd;
 }
 
+/* Estilo para cada link (item da lista) */
+.botoes a {
+    display: flex; /* Alinha a imagem e o texto na horizontal */
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.botoes a:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px); /* Efeito de deslizar ao passar o mouse */
+    color: #3d357e; /* Muda a cor do texto para o azul */
+}
+
+/* Removemos o estilo antigo das imagens */
 .botao-imagem, .botao-image {
-    width: 160px; /* Levemente maior */
-    height: auto;
-    border-radius: 8px; /* Cantos arredondados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para cada imagem */
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    border: 2px solid transparent; /* Borda transparente inicial */
+    width: 50px; /* Imagens menores para a lista */
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: none; /* Remove a sombra individual */
+    border: none; /* Remove a borda individual */
+    background-color: #fff; /* Fundo branco para imagens com transparência */
+    padding: 5px; /* Pequeno espaçamento interno */
+    box-sizing: border-box; /* Garante que padding não afete o tamanho total */
 }
 
-.botao-imagem:hover, .botao-image:hover {
-    transform: scale(1.08); /* Efeito de zoom mais pronunciado */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    border-color: #edae0f; /* Borda amarela ao passar o mouse */
-}
-
-/* Ajustes para telas menores (Responsividade) */
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
-    .cabecalho {
-        padding: 20px 0;
-    }
-    .logo {
-        width: 150px;
-    }
-    .listas-container {
-        gap: 20px;
-    }
-    .lista-suspensa summary {
-        font-size: 1.2em;
-        padding: 15px 20px;
-    }
-    .botoes {
-        gap: 20px;
-        padding: 20px;
-    }
-    .botao-imagem, .botao-image {
-        width: 140px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 120px;
-    }
-    .lista-suspensa summary {
-        font-size: 1.1em;
-        padding: 12px 15px;
-    }
-    .botoes {
+    /* ... (outras regras responsivas podem continuar aqui) ... */
+    .botoes a {
+        padding: 10px;
         gap: 15px;
-        padding: 15px;
-    }
-    .botao-imagem, .botao-image {
-        width: 100px;
-        border-radius: 6px;
+        font-size: 1em;
     }
 }
