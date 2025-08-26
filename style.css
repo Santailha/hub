@@ -6,13 +6,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte */
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .cabecalho {
     background-color: #3d357e;
-    padding: 30px 20px; /* Adicionado padding lateral */
+    padding: 30px 20px; 
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
@@ -21,15 +21,14 @@ body {
 .logo {
     width: 180px;
     height: auto;
-    transition: width 0.3s ease; /* Transição suave para o logo */
-}
+    transition: width 0.3s ease; 
 
 .listas-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    padding: 0 20px; /* Padding lateral para não colar nas bordas */
+    padding: 0 20px; 
 }
 
 .lista-suspensa {
@@ -118,18 +117,18 @@ body {
     background-color: #fff;
     padding: 5px;
     box-sizing: border-box;
-    flex-shrink: 0; /* Impede que a imagem encolha */
+    flex-shrink: 0; 
     transition: transform 0.2s ease;
 }
 
 .botoes a:hover .botao-imagem {
-    transform: scale(1.1); /* Efeito de zoom na imagem ao passar o mouse no item */
+    transform: scale(1.1); 
 }
 
 
-/* --- DESIGN RESPONSIVO PARA TABLETS E CELULARES --- */
+/* --- RESPONSIVIDADE / MATHEUS NÃO MEXER NESSA PARTE --- */
 
-/* Telas médias (tablets em modo retrato, celulares grandes) */
+
 @media (max-width: 768px) {
     .cabecalho {
         padding: 25px 15px;
@@ -161,14 +160,13 @@ body {
     }
 }
 
-
-/* Telas pequenas (maioria dos celulares) */
+/* REPONSIVDADE - MATHEUS NAO MEXER NESSA PARTE - (CELULAR / TABLET) */
 @media (max-width: 480px) {
     body {
-        /* Remove o efeito de 'hover' que não funciona em toque e pode ser problemático */
+        /* Remove o efeito de 'hover' que não funciona em toque (Nunca tirar) */
         -webkit-tap-highlight-color: transparent;
     }
-
+         /* Remove o efeito de 'hover' que não funciona em toque (Nunca tirar) */ 
     .cabecalho {
         padding: 20px 10px;
         margin-bottom: 25px;
@@ -184,7 +182,7 @@ body {
     }
     
     .lista-suspensa:hover {
-        /* Desativa o efeito de elevação em dispositivos de toque */
+       
         transform: none;
     }
 
@@ -199,7 +197,7 @@ body {
     }
 
     .botoes a {
-        /* Remove o efeito de hover que não funciona bem no celular */
+       
         transition: none;
     }
 
@@ -210,7 +208,7 @@ body {
     }
     
     .botoes a:active {
-        /* Adiciona um feedback visual para o toque */
+       
         background-color: #f0f0f0;
     }
 
