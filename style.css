@@ -16,6 +16,10 @@ body {
     src: url(fonts/Manrope-VariableFont_wght.ttf) format('truetype');
 }
 
+header h1{
+    color: #ffffff;
+}
+
 .cabecalho {
     background-color: #3d357e;
     padding: 30px 20px;
