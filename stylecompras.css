@@ -1,0 +1,35 @@
+* {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.fonte {
+    color: white;
+    font-family:'manrope';
+    padding-bottom: 5vh;
+    font-weight: 150;
+    font-size: 25pt;
+}
+
+footer {
+    color: white;
+    padding-top: 5vh;
+    font-weight: bold;
+    padding-bottom: 3vh;
+
+}
+
+body {
+    background-color: #3d357e;
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'manrope';
+    src: url(fonts/Manrope-VariableFont_wght.ttf) format('truetype');
+}
