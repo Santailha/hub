@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+.logo {
+    background-color: #3d357e;
+    text-align: center; 
+}
+
+.logoft {
+    margin-top: 30px;
+    width: 150px;
+    height: auto;
+}
+
+.txt {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.fonte{
+    font-family:'manrope';
+    font-weight: 150;
+    font-size: 25pt;
+}
+
+body {
+    background-color: #3d357e;
+}
+
+.script {
+    margin-bottom: 30px;
+}
+
+@font-face {
+    font-family: 'manrope';
+    src: url(fonts/Manrope-VariableFont_wght.ttf) format('truetype');
+}
